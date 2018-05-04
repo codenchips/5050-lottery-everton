@@ -112,6 +112,11 @@
     h5{
       margin: 1rem 0;
     }
+    h3{
+      font-family: $font-family;
+      color: $brand-three;
+
+    }
     @media only screen and (max-width: 1000px) {
       flex: 1 1 100%;
       width: 100%;
@@ -182,15 +187,7 @@
 .block.step-two {
   form {
     margin-top: 0.5rem;
-    legend{
-      h4{
-        text-transform: uppercase;
-        font-family: $font-family;
-        color: $brand-three;
-        font-size: $header-size / 1.2;
 
-      }
-    }
 
   }
 }

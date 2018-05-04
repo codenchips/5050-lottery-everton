@@ -42,6 +42,15 @@ form {
 legend {
   margin-bottom: -1rem;
 }
+legend{
+  h4{
+    text-transform: uppercase;
+    font-family: $font-family;
+    color: $brand-three;
+    font-size: $header-size / 1.2;
+
+  }
+}
 
 /* LABEL ======================================= */
 
