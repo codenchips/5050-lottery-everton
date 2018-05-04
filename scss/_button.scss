@@ -14,6 +14,7 @@ button{
 
 }
 .button-primary, input[type=submit] {
+  line-height: 1.5;
   padding: 10px 20px;
   display: inline-block;
   font-size: $header-size / 1.7;
@@ -31,13 +32,13 @@ button{
   font-family: $header-font-family;
 
   &:hover {
-    background-color: $brand-two;
+    background-color: $brand-one;
     color: $white;
     outline: none;
 
   }
   &:active,&.focus {
-    background-color: $brand-two;
+    background-color: $brand-one;
     color: $white;
     outline: none;
 
@@ -120,13 +121,13 @@ input[type=number] {
   font-family: $header-font-family;
 
   &:hover {
-    background-color: $brand-two;
+    background-color: $brand-one;
     color: $white;
     outline: none;
 
   }
   &:active {
-    background-color: $brand-two;
+    background-color: $brand-one;
     color: $white;
     outline: none;
 
