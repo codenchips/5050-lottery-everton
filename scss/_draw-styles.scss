@@ -209,7 +209,7 @@
 
 //STEP FOUR
 .block.step-four {
-  & > div {
+  .inner_top, .inner_mid, .inner_bottom {
     flex: 1 1 30%;
   }
   .inner_top {
