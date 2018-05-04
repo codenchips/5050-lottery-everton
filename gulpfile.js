@@ -4,6 +4,7 @@ var gulp = require('gulp')
     prefix = require('gulp-autoprefixer'),
     cssmin      = require('gulp-cssnano'),
     rename      = require('gulp-rename');
+    notify      = require('gulp-notify');
 
 
 

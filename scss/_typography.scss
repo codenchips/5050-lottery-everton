@@ -9,6 +9,7 @@
   font-style: normal;
 
 }
+
 @font-face {
   font-family: 'interstateblackcondensed';
   src: url('interstate-blackcondensed-webfont.woff2') format('woff2'),
@@ -18,6 +19,7 @@
   font-style: normal;
 
 }
+
 @font-face {
   font-family: 'interstate-boldbold';
   src: url('interstate-bold-webfont.woff2') format('woff2'),
@@ -27,6 +29,7 @@
   font-style: normal;
 
 }
+
 @font-face {
   font-family: 'interstateboldcondensed';
   src: url('interstate-boldcondensed-webfont.woff2') format('woff2'),
@@ -36,6 +39,7 @@
   font-style: normal;
 
 }
+
 @font-face {
   font-family: 'interstatelight';
   src: url('interstate-light-webfont.woff2') format('woff2'),
@@ -45,6 +49,7 @@
   font-style: normal;
 
 }
+
 @font-face {
   font-family: 'interstatelightcondensed';
   src: url('../fonts/interstate-lightcondensed-webfont.woff2') format('woff2'),
@@ -54,6 +59,7 @@
   font-style: normal;
 
 }
+
 @font-face {
   font-family: 'interstate-regularregular';
   src: url('interstate-regular-webfont.woff2') format('woff2'),
@@ -63,6 +69,7 @@
   font-style: normal;
 
 }
+
 @font-face {
   font-family: 'interstateregularcondensed';
   src: url('interstate-regularcondensed-webfont.woff2') format('woff2'),
@@ -72,15 +79,13 @@
   font-style: normal;
 
 }
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 // PX to REM - Usage: font-size: rem(37px);
 @function rem($px, $base: $base-font-size) {
   @return ($px / $base) * 1rem;
 }
-
-
 
 /*------------------------------------*\
     # Simple Typography Settings
@@ -102,7 +107,7 @@ $paragraph-margin: 10px;
 // Header Styles
 $header-color: #000000;
 $header-size: rem(45px);
-$header-line-height: 1.25em;
+$header-line-height: 1em;
 $header-margin: $paragraph-margin * 1.2;
 
 // Blockquote Styles
@@ -156,17 +161,10 @@ h1, h2, h3, h4, h5, h6 {
 //
 // Styleguide typography.heading-one
 h1 {
-  font-size: $header-size * 1.2;
-  text-transform: uppercase;
+  font-size: $header-size * 1.7;
   strong {
-    font-size: $header-size * 1.2;
+    font-size: $header-size * 1.7;
     font-weight: 800;
-  }
-  @media only screen and (max-width: 1000px) {
-    font-size: $header-size / 1.2;
-  }
-  @media only screen and (max-width: 750px) {
-    font-size: $header-size / 1.5;
   }
 }
 
@@ -186,12 +184,11 @@ h1 {
 //
 // Styleguide typography.heading-two
 h2 {
-  font-size: $header-size / 1.4;
-  text-transform: uppercase;
+  font-size: $header-size;
   font-weight: 400;
 
   strong {
-    font-size: $header-size / 1.4;
+    font-size: $header-size;
     font-weight: 800;
 
   }
@@ -216,13 +213,13 @@ h2 {
 // <h3>Heading Three</h3>
 //
 // Styleguide typography.heading-three
-h3, h3 span {
-  font-size: $header-size / 1.4;
+h3, h3 span, h3 a {
+  font-size: $header-size / 1.2;
   font-weight: 400;
-  text-transform: uppercase;
+  font-family: $header-font-family;
 
   strong {
-    font-size: $header-size / 1.4;
+    font-size: $header-size / 1.2;
     font-weight: 800;
 
   }
@@ -239,12 +236,12 @@ h3, h3 span {
 //
 // Styleguide typography.heading-four
 h4, h4 a {
-  font-size: $header-size / 1.5;
+  font-size: $header-size / 1.7;
   font-weight: 400;
-  text-transform: uppercase;
+  line-height: 0.9;
 
   strong {
-    font-size: $header-size / 1.5;
+    font-size: $header-size / 1.7;
     font-weight: 800;
   }
 }
@@ -257,10 +254,11 @@ h4, h4 a {
 // <h5>Heading Five</h5>
 //
 // Styleguide typography.heading-five
-h5 {
+h5, h5 a {
   font-size: $header-size / 2;
   font-weight: 400;
-
+  font-family: $header-font-family;
+  color: $lightgrey;
   strong {
     font-size: $header-size / 2;
     font-weight: 800;
@@ -317,8 +315,11 @@ ul, ol {
     margin-top: 10px;
     line-height: $paragraph-line-height;
     color: $paragraph-color;
-    font-size: $paragraph-size;
+    font-size: $header-size / 1.7;
+    a{
+      font-size: $header-size / 1.7;
 
+    }
   }
 
   ul, ol {

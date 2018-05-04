@@ -16,19 +16,19 @@ button{
 .button-primary, input[type=submit] {
   padding: 10px 20px;
   display: inline-block;
-  font-size: $paragraph-size;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-size: $header-size / 1.7;
+  font-weight: 200;
   cursor: pointer;
   letter-spacing: 1px;
-  border-radius: 500px;
+  border-radius: 10px;
   transition-property: background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-  background: $brand-one;
+  background: $brand-two;
   margin: 0.5rem 0 0 0;
   border: none;
   color: $white;
+  font-family: $header-font-family;
 
   &:hover {
     background-color: $brand-two;
@@ -83,10 +83,11 @@ input[type=number] {
 }
 
 .button-primary.choices {
-  background: $grey;
+  background-color: $lightestgrey;
+  color: $brand-one;
   margin: 0.5rem 0 0 0;
   border: none;
-  font-size: $paragraph-size;
+  font-size: $header-size / 1.7;
   &:hover {
     background-color: $brand-one;
     color: $white;
@@ -105,21 +106,21 @@ input[type=number] {
 .button-secondary{
   padding: 10px 20px;
   display: inline-block;
-  font-size: $paragraph-size;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-size: $header-size / 1.7;
+  font-weight: 200;
   cursor: pointer;
   letter-spacing: 1px;
-  border-radius: 500px;
+  border-radius: 10px;
   transition-property: background-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   margin: 0.5rem 0 0 0;
-  color: $brand-one;
-  border: 1px solid $brand-one;
+  color: $brand-two;
+  border: 1px solid $brand-two;
+  font-family: $header-font-family;
 
   &:hover {
-    background-color: $brand-one;
+    background-color: $brand-two;
     color: $white;
     outline: none;
 
