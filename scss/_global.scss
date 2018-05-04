@@ -6,8 +6,21 @@
 $black: #1F1F1F;
 $white: #fffff;
 $true-black: #000000;
-$brand-one: rgb(27, 159, 214);
 $grey: #8E8E8E;
+
+$white: #ffffff;
+
+$darkgray: #797979;
+$black: #2b2b2b;
+
+$brand-one: #0E4D8B;
+$brand-two: #A1DAF8;
+$brand-three: #0069B4;
+$brand-four: #41C0F0;
+
+$brand-five: #FFE082;
+$brand-six: #F7A700;
+$brand-seven: #F08300;
 
 section, header, footer {
   width: 100%;
@@ -123,8 +136,8 @@ body {
 footer {
   height: 10vh;
   position: relative;
+  background: $brand-one;
   .inner_wrapper.ticker {
-    background-color: $white;
     width: 100vw;
     //display: inline-flex;
     height: 5vh;
@@ -152,7 +165,6 @@ footer {
     }
   }
   .inner_wrapper.footer-nav {
-    background-color: $white;
     text-align: center;
     .block {
       padding: 0.2rem;
@@ -162,12 +174,16 @@ footer {
     }
     nav.block {
       height: 5vh;
+      ul{
+        z-index: 3;
+      }
     }
     .block.copy {
       height: 5vh;
     }
   }
   .inner_wrapper.acred {
+
     width: 100%;
     height: 100%;
     display: inline-flex;
@@ -178,11 +194,9 @@ footer {
       justify-content: center;
       align-items: center;
       &.visa {
-        flex: 1 1 50%;
         justify-content: flex-start;
       }
       &.social {
-        flex: 1 1 50%;
         justify-content: flex-end;
         padding-right: 1rem;
         img {
